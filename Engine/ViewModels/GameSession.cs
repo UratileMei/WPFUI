@@ -10,6 +10,7 @@ namespace Engine.ViewModels
         public GameSession()
         {
             CurrentPlayer = new Player();
+            CurrentPlayer.Name = "John Snow";
         }
     }
 }
