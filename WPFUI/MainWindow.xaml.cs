@@ -17,9 +17,13 @@ namespace WPFUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private GameSession _gamesession;
         public MainWindow()
         {
             InitializeComponent();
+            _gamesession = new GameSession();
+
+            DataContext = _gamesession;
         }
     }
 }
