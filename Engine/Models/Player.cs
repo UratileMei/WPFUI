@@ -25,7 +25,10 @@ namespace Engine.Models
             get { return _characterClass; }
             set { OnPropertyChanged("CharacterClass"); } }
 
-        public int HitPoints { get; set; }
+        public int HitPoints {
+            get{return _hitPoints;}
+            set { OnPropertyChanged("HitPoints"); }
+        }
         public int ExperiencePoints {
             get { 
                return _experiencePoints; }
