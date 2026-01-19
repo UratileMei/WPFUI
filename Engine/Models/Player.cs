@@ -38,8 +38,24 @@ namespace Engine.Models
                 OnPropertyChanged("ExperiencePoints");
             }
         }
-        public int Level { get; set; }
-        public int Gold { get; set; }
+        public int Level { get { 
+               return _experiencePoints; }
+            set
+            {
+                _level = value;
+                OnPropertyChanged("Level");
+            } }
+        public int Gold {
+            get
+            {
+                return _gold;
+            }
+            set
+            {
+                _gold = value;
+                OnPropertyChanged("Gold");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
