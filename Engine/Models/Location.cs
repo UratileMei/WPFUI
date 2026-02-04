@@ -13,5 +13,10 @@ namespace Engine.Models
         public string Description { get; set; }
         public string ImageName { get; set; }
 
+        //adding more variables to Location class
+        public int RequiredLevel { get; set; }  
+        public string RequiredItem { get; set; }
+        public Quest QuestAvailableHere { get; set; }
+
     }
 }
